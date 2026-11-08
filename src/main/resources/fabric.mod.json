@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "spell_engine_expansion_ld",
+  "version": "${version}",
+  "name": "Spell Engine Expansion_LD",
+  "description": "Spell charges, recasts, cast-time modifiers, scroll refunds and hotbar cooldown numbers for Spell Engine, made for Fallen Eden.",
+  "authors": [
+    "LeDok"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.ledok.spell_engine_expansion_ld.SpellEngineExpansionMod"
+    ],
+    "client": [
+      "net.ledok.spell_engine_expansion_ld.client.SpellEngineExpansionClient"
+    ]
+  },
+  "mixins": [
+    "spell_engine_expansion_ld.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "spell_engine": ">=1.10.9"
+  }
+}
